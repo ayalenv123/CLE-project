@@ -1,13 +1,20 @@
 :root {
-    --ebony: #4e5340ff;
-    --ebony-2: #697268ff;
-    --cool-steel: #95a3a4ff;
+    --taupe: #463f3aff;
+    --dim-grey: #68605bff;
+    --grey-olive: #8a817cff;
+    --rosy-granite: #978F8A;
+    --grey-olive-2: #a39d97ff;
+    --silver: #bcb8b1ff;
+    --dust-grey: #d8d6d0ff;
+    --parchment: #f4f3eeff;
+    --parchment-2: #f3efeaff;
+    --parchment-3: #f2ebe5ff;
     --white: #FFFFFF;
-
+    --black: :#000000;
 }
 
 nav {
-    background-color: var(--ebony-2);
+    background-color: var(--dim-grey);
     padding: 1px;
     display: flex;
     justify-content: space-between;
@@ -20,12 +27,14 @@ nav {
     }
 
     a {
-        color: var(--white);
+        color: var(--black);
         /* transform-origin: center; */
         transition: all 1s ease;
         text-decoration: none;
         background-color: var(--cool-steel);
         border-radius: 20%;
+        border: solid black;
+        background-color: white;
         padding: 4px 10px;
     }
 
@@ -38,7 +47,7 @@ nav {
         /* transform-origin: center; */
         transition: all 1s ease;
         border-radius: 20%;
-        background-color: var(--cool-steel);
+        background-color: var(--grey-olive);
 
 
         cursor: pointer;
@@ -52,16 +61,53 @@ body {
 }
 
 header {
-    background-color: var(--ebony);
+    background-color: var(--dust-grey);
     padding: 1px;
 }
 
 main {
-    background-color: var(--cool-steel);
+    background-color: var(--grey-olive);
     padding: 1px;
+
+    h2 {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.informationPage {
+
+    margin: 10vw;
+    padding: 5vw;
+    background-color: var(--grey-olive-2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 2px var(--rosy-granite);
+    box-shadow: 2px 2px var(--dim-grey);
+    border-radius: 5%;
+
+    img {
+        width: 30vw;
+        border: solid 2px var(--lavender-grey-2);
+        border-radius: 15%;
+    }
+}
+
+#backgroundImage {
+
+    background-image: url(https://media.istockphoto.com/id/513741836/photo/vintage-record-player-with-vinyl-disc-close-up.jpg?s=170667a&w=0&k=20&c=jMkjHltL5tN55hnCh7OnT3jaJgW1p2hJL4COun1rLB8=);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15vw 10vw 15vw 10vw;
+
+
+
+
 }
 
 footer {
-    background-color: var(--ebony-2);
+    background-color: var(--dim-grey);
     padding: 1px;
 }
