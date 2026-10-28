@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Gravitas+One&family=Isometra&display=swap');
 
 :root {
 
@@ -13,11 +13,35 @@
     --cool-steel: #8ba3b7ff;
     --air-force-blue: #7492a8ff;
     --air-force-blue-2: #5c8099ff;
-    --baltic-blue: #2d5d7bff;
-    --border-color: rgb(255, 0, 0);
-    --border-shadow: rgb(117, 24, 24);
+    --baltic-blue: rgb(50, 95, 124);
+    --border-color: rgb(50, 119, 210);
+    --border-shadow: rgb(11, 23, 111);
 
-    font-family: "Quicksand", sans-serif;
+
+    /* font-family: "Gravitas One", serif;*/
+    font-family: "BenchNine", sans-serif;
+
+}
+
+h1 {
+    font-family: "Gravitas One", serif;
+    font-size: 40px;
+}
+
+p,
+li {
+    font-size: 25px;
+}
+
+
+h2 {
+    font-family: "Gravitas One", serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Gravitas One", serif;
+    font-size: 20px;
 }
 
 
@@ -86,12 +110,10 @@ header {
     align-items: center;
     gap: 8vw;
 
-    h1 {
-        font-size: 50px;
-    }
+
 
     img {
-        height: 100vh;
+        height: 80vh;
     }
 
 }
@@ -99,7 +121,8 @@ header {
 
 #headerBackground {
     /* background-color: var(--air-force-blue); */
-    background-image: url(https://img.freepik.com/premium-photo/playful-blue-background-with-whimsical-stars-layered-dotted-textures_879736-78816.jpg?w=1480);
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url(https://wallpaperaccess.com/full/684122.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -108,6 +131,7 @@ header {
     padding: 2vw;
 
 }
+
 
 main {
     background-color: var(--parchment);
@@ -124,6 +148,7 @@ main {
 }
 
 #informationPage {
+
     margin: 10vw 0vw 20vw 0vw;
     display: flex;
     flex-direction: row;
@@ -134,24 +159,37 @@ main {
         font-size: 30px;
     }
 
-    p {
-        background-color: var(--air-force-blue);
-        padding: 2vw;
-        width: 12vw;
-        border-radius: 25px;
-        border: solid 2px var(--border-color);
+    #infoButton {
         transition: all 1s ease;
+        text-decoration: none;
+        background-color: var(--powder-blue);
+        border-radius: 25px;
+        border: solid 2px;
+
+        display: inline-block;
+        padding: 10px 16px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+
 
     }
 
-    p:hover {
+    #infoButton:hover {
+        text-decoration: none;
         transform: scale(1.1);
+        background-color: var(--air-force-blue);
+        cursor: pointer;
     }
 
     img {
-        height: 50vw;
+        height: 40vw;
         margin-left: 15vw;
-        transform: translateY(-12vw);
+        transform: translateY(-9vw);
+
     }
 }
 
@@ -162,7 +200,14 @@ main {
     align-self: baseline;
     border-left: none;
     background-color: var(--baltic-blue);
+    width: 50vw;
 
+}
+
+#informationAnimation {
+
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
 }
 
 #madeForPage {
@@ -171,7 +216,12 @@ main {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 10vw;
+    justify-content: space-around;
+    margin: 10vw;
+    /* gap: 10vw; */
+
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
 
 
     img {
@@ -195,8 +245,7 @@ main {
 
 
 #backgroundImage {
-    background-image: url(https://tse4.mm.bing.net/th/id/OIP.ng87c2FHC4Fvim4Cd-7-ewHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
-
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-future-artificial-intelligence-robot-blue-banner-poster-background-image_195056.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15vw 10vw 15vw 10vw;
@@ -206,9 +255,24 @@ main {
 #videoPage {
     display: flex;
     justify-content: center;
+
+
+
+
 }
 
+video {
+    width: 640px;
+    height: 360px;
+    border: 2px solid #000;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
 
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
+
+}
 
 footer {
     background-color: var(--powder-blue);
@@ -221,23 +285,27 @@ footer {
 
     align-items: stretch;
     gap: 20vw;
+    margin: 20vw 0vw 20vw 0vw;
+
+
 
 }
 
 #review1 {
     margin-right: 25vw;
-    padding: 10vw 3vw 10vw 3vw;
+    padding: 5vw 3vw 5vw 3vw;
     background-color: var(--baltic-blue);
     display: flex;
     align-items: left;
     gap: 2vw;
 
-    border: solid 4px var(--border-color);
+    border: solid 2px var(--border-color);
     border-left: none;
-    border-radius: 25px;
+    border-radius: 0px 25px 25px 0px;
 
 
-
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
 
 
     img {
@@ -250,17 +318,18 @@ footer {
 
 #review2 {
     margin-left: 25vw;
-    padding: 10vw 3vw 10vw 3vw;
+    padding: 5vw 3vw 5vw 3vw;
     background-color: var(--baltic-blue);
     display: flex;
     align-items: right;
     gap: 2vw;
 
-    border: solid 4px var(--border-color);
+    border: solid 2px var(--border-color);
     border-right: none;
-    border-radius: 25px;
+    border-radius: 25px 0px 0px 25px;
 
-
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
 
 
 
@@ -292,10 +361,12 @@ footer {
 .stepsLeft {
     height: 25vw;
     margin-right: 25vw;
+
     padding: 5vw;
     background-color: var(--baltic-blue);
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     border: solid 2px var(--border-color);
     border-left: none;
@@ -303,12 +374,24 @@ footer {
 
     color: var(--white);
 
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
+
+
     img {
         height: 45vw;
-        transform: translateY(-12vw);
+        transform: translateY(-15vw);
+
+
     }
 
 
+}
+
+.stepsAnimationBox {
+    padding-top: 10vw;
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
 }
 
 .stepsRight {
@@ -324,9 +407,12 @@ footer {
     border-radius: 25px 0px 0px 25px;
     color: var(--white);
 
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
+
     img {
         height: 45vw;
-        transform: translateY(-12vw);
+        transform: translateY(-15vw);
 
     }
 
@@ -339,23 +425,236 @@ footer {
     align-items: center;
     justify-content: center;
 
-    margin: 10vw;
+    margin: 30vw 10vw 30vw 10vw;
     padding: 5vw;
     background-color: var(--baltic-blue);
     border: solid 4px var(--border-color);
     box-shadow: 2px 2px var(--border-shadow);
     border-radius: 5%;
 
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
+
     img {
         width: 50vw;
+
     }
 }
+
+
 
 .footerThings {
     display: flex;
 
     img {
-        width: 5vw;
-        height: 5vw;
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+.footerPhoto {
+    padding: 5px;
+    transition: all ease-out 2s;
+}
+
+.footerPhoto:hover {
+    transform: scale(1.2);
+    transition: all ease 1s;
+}
+
+/* contactpagina */
+
+
+#contactMain {
+
+    padding: 10vw 20vw 10vw 20vw;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+#contactmain {
+    background-color: var(--parchment);
+}
+
+form {
+    border-radius: 5px;
+    background-color: var(--ash-grey);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1vw;
+
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
+
+
+}
+
+#fullName {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+
+
+}
+
+#fullName * {
+    flex: 1;
+
+}
+
+
+
+#townAndBirthPlace {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 100%
+}
+
+#townAndBirthPlace * {
+    flex: 1;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    font-size: 1rem;
+
+
+}
+
+
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--off-white);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--powder-blue);
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--off-white);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--powder-blue)
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--off-white);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--powder-blue);
+}
+
+input[type=submit] {
+    width: 100%;
+    color: var(--black);
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--baltic-blue);
+    text-decoration: none;
+    transition: ease-out 1s;
+}
+
+input[type=submit]:hover {
+    background-color: var(--steel-blue);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease 1s;
+    transform: scale(1.1);
+}
+
+.message {
+    height: 20vw;
+}
+
+input:user-invalid {
+    border: dotted 3px rgb(194, 96, 96);
+}
+
+input:user-valid {
+    border: dotted 3px rgb(38, 214, 102);
+}
+
+
+
+input::placeholder {
+    color: black;
+    opacity: 0.8;
+}
+
+
+
+
+
+/* animations */
+@keyframes card-appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@media (width <800px) {
+
+
+    h1 {
+
+        font-size: 30px;
+    }
+
+    p,
+    li {
+        font-size: 13px;
+    }
+
+
+    h2 {
+        font-family: "Gravitas One", serif;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-family: "Gravitas One", serif;
+        font-size: 15px;
+    }
+
+
+
+
+    #informationPage {
+
+
+
+
+        h3 {
+            font-size: 15px;
+        }
+
+
     }
 }

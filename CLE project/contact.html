@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact</title>
+</head>
+
+<body>
+  <section id="pageBackgroundColor">
+    <section id="headerBackground">
+      <nav>
+        <div>
+          <p>logo boxje image</p>
+        </div>
+        <div id="navButtons">
+          <div>
+            <a href="index.html">Home </a>
+          </div>
+          <div>
+            <a href="manual.html"> Handleiding </a>
+          </div>
+          <div>
+            <a href="contact.html"> Contact </a>
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <section id="homePageHeader">
+          <div id="headerText">
+            <h1>Contact pagina</h1>
+            <p>Heb jij een klacht of een vraag over de robot vul het formulier in!</p>
+          </div>
+          <div id="headerImage">
+            <img src="images/littleBot.png" alt="picture of the bot">
+          </div>
+        </section>
+      </header>
+    </section>
+
+    <main id="contactMain">
+
+      <h2>Forms</h2>
+
+      <div id="contactPage">
+        <form>
+          <div id="fullName">
+            <div>
+              <label for="firstName">Voornaam:</label>
+              <input type="text" class="completeName" id="firstName" name="name" placeholder="Voornaam" required>
+            </div>
+            <div>
+              <label for="lastName">Achternaam:</label>
+              <input type="text" class="completeName" id="lastName" name="name" placeholder="Achternaam" required>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="mail" placeholder="Email" required>
+            </div>
+          </div>
+
+          <div id="townAndBirthPlace">
+            <div>
+              <label for="homeTown">Woonplaats:</label>
+              <input type="text" id="homeTown" placeholder="Woonplaats" required>
+            </div>
+            <div>
+              <label for="birthDate">vul je verjaardag in:</label>
+              <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+          </div>
+
+          <div>
+            <label for="subject">Onderwerp:</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled="" selected="">Kies een onderwerp</option>
+              <option value="complaint">Klacht</option>
+              <option value="question">Vraag</option>
+              <option value="other">Anders</option>
+            </select>
+          </div>
+
+          <div>
+            <div>
+              <label for="message">bericht</label>
+              <input type="text" id="message" name="message" required>
+            </div>
+          </div>
+
+
+
+          <div>
+            <fieldset>
+              <legend>Inschrijven voor nieuwsbrief?</legend>
+              <input type="radio" id="yes" name="newsletter" value="Ja">
+              <label for="yes">Ja</label>
+              <input type="radio" id="no" name="newsletter" value="Nee">
+              <label for="no">Nee</label>
+            </fieldset>
+          </div>
+          <div>
+
+            <label for="condition">Ik ga akkoord met de algemene voorwaarden</label>
+            <input type="checkbox" id="condition" name="condition" value="condition">
+
+          </div>
+
+          <div>
+            <div>
+              <input type="submit" name="submit-button" value="Verzenden">
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    </main>
+
+    <footer>
+      <p>CLE TEAM 5</p>
+      <div class="footerThings">
+        <img src="images/tiktok.png">
+        <img src="images/facebook.png">
+        <img src="images/instagram.png">
+      </div>
+    </footer>
+
+
+</body>
+
+</html>
