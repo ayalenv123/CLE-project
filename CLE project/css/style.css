@@ -46,7 +46,8 @@ h3 {
 
 
 nav {
-    width: 80vw;
+    width: 90vw;
+    transform: translateY(10px);
     margin-inline: auto;
 
     background-color: var(--air-force-blue-2);
@@ -104,6 +105,7 @@ header {
     text-align: center;
 }
 
+
 #homePageHeader {
     display: flex;
     justify-content: space-between;
@@ -122,13 +124,83 @@ header {
 #headerBackground {
     /* background-color: var(--air-force-blue); */
 
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url(https://wallpaperaccess.com/full/684122.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)),
+        url(https://wallpaperaccess.com/full/684122.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     margin: 1vw;
     border-radius: 25px;
     padding: 2vw;
+
+}
+
+#indexHomePageHeader {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8vw;
+
+
+
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        /* transform: translateY(14%); */
+        height: 90vh;
+        z-index: 1;
+
+
+    }
+
+    h1 {
+        /* font-size: 90px; */
+        color: var(--white);
+        bottom: 0;
+        position: absolute;
+        z-index: 2;
+        margin: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 70px;
+
+
+        text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            /*   1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191, */
+            1px 18px 6px rgba(16, 16, 16, 0.4),
+            1px 22px 10px rgba(16, 16, 16, 0.2),
+            1px 25px 35px rgba(16, 16, 16, 0.2),
+            1px 30px 60px rgba(16, 16, 16, 0.4);
+
+
+    }
+
+}
+
+
+#indexHeaderBackground {
+    /* background-color: var(--air-force-blue); */
+
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url(https://wallpaperaccess.com/full/684122.jpg); */
+    background: radial-gradient(circle, rgba(139, 163, 183, 1) 0%, rgba(139, 163, 183, 1) 5%, rgba(139, 163, 183, 1) 12%, rgba(50, 95, 124, 1) 57%, rgba(50, 95, 124, 1) 72%, rgba(50, 95, 124, 1) 83%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0vw 1vw 1vw 1vw;
+    border-radius: 25px;
+    /* padding: 2vw; */
 
 }
 
@@ -173,9 +245,6 @@ main {
             text-decoration: none;
             color: #000;
         }
-
-
-
     }
 
     #infoButton:hover {
@@ -199,7 +268,7 @@ main {
     height: 35vw;
     align-self: baseline;
     border-left: none;
-    background-color: var(--baltic-blue);
+    background: linear-gradient(var(--cool-steel), var(--air-force-blue), var(--baltic-blue));
     width: 50vw;
 
 }
@@ -605,7 +674,7 @@ input::placeholder {
 
 
 
-/* animations */
+/* animations voor */
 @keyframes card-appear {
     from {
         opacity: 0;
@@ -617,6 +686,8 @@ input::placeholder {
         transform: translateY(0) scale(1);
     }
 }
+
+
 
 
 @media (width <800px) {
