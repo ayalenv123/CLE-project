@@ -14,7 +14,7 @@
     --air-force-blue: #7492a8ff;
     --air-force-blue-2: #5c8099ff;
     --baltic-blue: rgb(50, 95, 124);
-    --border-color: rgb(50, 119, 210);
+    --border-color: rgb(204, 33, 33);
     --border-shadow: rgb(11, 23, 111);
 
 
@@ -46,8 +46,11 @@ h3 {
 
 
 nav {
+    height: 3vw;
     width: 90vw;
-    transform: translateY(10px);
+    box-sizing: border-box;
+    left: 50%;
+    transform: translate(-50%, 10px);
     margin-inline: auto;
 
     background-color: var(--air-force-blue-2);
@@ -60,33 +63,37 @@ nav {
 
     border: solid 2px var(--border-color);
 
+    position: fixed;
+    top: 0;
+
+    z-index: 3;
+
     #navButtons {
         display: flex;
         flex-direction: row;
-        gap: 1vw;
+        gap: 3vw;
     }
 
     a {
-        color: var(--black);
+        font-family: "Gravitas One", serif;
+        color: var(--parchment);
         /* transform-origin: center; */
         transition: all 1s ease;
         text-decoration: none;
-        background-color: var(--powder-blue);
+        /* background-color: var(--powder-blue);
         border-radius: 25px;
         border: solid 2px;
         background-color: var(--white);
         display: inline-block;
-        padding: 10px 16px;
+        padding: 10px 16px; */
     }
 
     a:hover {
 
-
+        color: var(--powder-blue);
         text-decoration: none;
         transform: scale(1.1);
         /* transform-origin: center; */
-
-        background-color: var(--powder-blue);
 
 
         cursor: pointer;
@@ -97,6 +104,14 @@ nav {
 
 body {
     margin: 0;
+
+}
+
+
+
+img,
+video {
+    max-width: 100%;
 }
 
 header {
@@ -115,7 +130,7 @@ header {
 
 
     img {
-        height: 80vh;
+        width: 50vw
     }
 
 }
@@ -151,7 +166,7 @@ header {
         left: 50%;
         transform: translateX(-50%);
         /* transform: translateY(14%); */
-        height: 90vh;
+        width: 50vw;
         z-index: 1;
 
 
@@ -175,10 +190,7 @@ header {
             1px 4px 1px #919191,
             1px 5px 1px #919191,
             1px 6px 1px #919191,
-            /*   1px 7px 1px #919191,
-        1px 8px 1px #919191,
-        1px 9px 1px #919191,
-        1px 10px 1px #919191, */
+
             1px 18px 6px rgba(16, 16, 16, 0.4),
             1px 22px 10px rgba(16, 16, 16, 0.2),
             1px 25px 35px rgba(16, 16, 16, 0.2),
@@ -331,7 +343,7 @@ main {
 }
 
 video {
-    width: 640px;
+    width: 10vw;
     height: 360px;
     border: 2px solid #000;
     display: block;
@@ -713,6 +725,69 @@ input::placeholder {
         font-family: "Gravitas One", serif;
         font-size: 15px;
     }
+
+
+
+    nav {
+        height: auto;
+
+
+        #navButtons {
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+        }
+
+
+
+
+    }
+
+
+
+
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    #homePageHeader {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 500vw;
+
+        }
+
+    }
+
+
+
+
+    #indexHomePageHeader {
+
+        img {
+            width: 90vw;
+        }
+
+        h1 {
+            /* font-size: 90px; */
+            color: var(--white);
+            bottom: 70%;
+            font-size: 60px;
+        }
+
+    }
+
+
+
+
+
+
 
 
 
