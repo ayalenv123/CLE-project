@@ -14,7 +14,7 @@
     --air-force-blue: #7492a8ff;
     --air-force-blue-2: #5c8099ff;
     --baltic-blue: #2d5d7bff;
-    --border-color: rgb(207, 21, 21);
+    --border-color: rgb(255, 0, 0);
     --border-shadow: rgb(117, 24, 24);
 
     font-family: "Quicksand", sans-serif;
@@ -99,7 +99,7 @@ header {
 
 #headerBackground {
     /* background-color: var(--air-force-blue); */
-    background-image: url(https://tse4.mm.bing.net/th/id/OIP.iTXYeKABC_b2rRJsNyNBpwHaEE?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-image: url(https://img.freepik.com/premium-photo/playful-blue-background-with-whimsical-stars-layered-dotted-textures_879736-78816.jpg?w=1480);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -160,45 +160,46 @@ main {
     border: solid 2px var(--border-color);
     height: 35vw;
     align-self: baseline;
+    border-left: none;
     background-color: var(--baltic-blue);
 
 }
 
 #madeForPage {
 
-    margin: 10vw;
-    padding: 5vw;
-    background-color: var(--baltic-blue);
+    margin: 10vw 0vw 20vw 0vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 2vw;
+    align-items: stretch;
+    gap: 10vw;
 
-    border: solid 4px var(--border-color);
-
-
-    box-shadow: 2px 2px var(--border-shadow);
-    border-radius: 25px;
 
     img {
-        width: 25vw;
-        height: 25vw;
-        border: solid 2px var(--lavender-grey-2);
-        border-radius: 15%;
-        object-fit: cover;
+        border-radius: 25px;
+        align-self: right;
+        width: 45vw;
+
     }
+
 }
 
-#backgroundImage {
+#madeForText {
+    display: flex;
+    border-radius: 25px;
+    border: solid 2px var(--border-color);
+    background-color: var(--baltic-blue);
+    flex-direction: column;
+    text-align: center;
+}
 
-    background-image: url(https://media.istockphoto.com/id/513741836/photo/vintage-record-player-with-vinyl-disc-close-up.jpg?s=170667a&w=0&k=20&c=jMkjHltL5tN55hnCh7OnT3jaJgW1p2hJL4COun1rLB8=);
+
+
+#backgroundImage {
+    background-image: url(https://tse4.mm.bing.net/th/id/OIP.ng87c2FHC4Fvim4Cd-7-ewHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15vw 10vw 15vw 10vw;
-
-
-
 
 }
 
@@ -207,6 +208,8 @@ main {
     justify-content: center;
 }
 
+
+
 footer {
     background-color: var(--powder-blue);
     padding: 1px;
@@ -214,25 +217,49 @@ footer {
 
 #reviews {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     align-items: stretch;
-    gap: 5vw;
-    margin: 2vw;
+    gap: 20vw;
+
 }
 
-.review {
-    width: 50vw;
+#review1 {
+    margin-right: 25vw;
     padding: 10vw 3vw 10vw 3vw;
     background-color: var(--baltic-blue);
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: left;
     gap: 2vw;
 
     border: solid 4px var(--border-color);
-    box-shadow: 2px 2px var(--border-shadow);
+    border-left: none;
     border-radius: 25px;
+
+
+
+
+
+    img {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 15%;
+        object-fit: cover;
+    }
+}
+
+#review2 {
+    margin-left: 25vw;
+    padding: 10vw 3vw 10vw 3vw;
+    background-color: var(--baltic-blue);
+    display: flex;
+    align-items: right;
+    gap: 2vw;
+
+    border: solid 4px var(--border-color);
+    border-right: none;
+    border-radius: 25px;
+
 
 
 
@@ -250,34 +277,57 @@ footer {
 
 
 #userGuide {
+    margin-top: 20vw;
     display: flex;
 
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    gap: 1vw;
+    gap: 20vw;
 
 }
 
-.steps {
-    width: 20vw;
+.stepsLeft {
+    height: 25vw;
+    margin-right: 25vw;
     padding: 5vw;
     background-color: var(--baltic-blue);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    border: solid 4px var(--border-color);
-    box-shadow: 2px 2px var(--border-shadow);
-    border-radius: 5%;
+    border: solid 2px var(--border-color);
+    border-left: none;
+    border-radius: 0px 25px 25px 0px;
 
+    color: var(--white);
 
     img {
-        width: 20vw;
-        height: 20vw;
-        border-radius: 15%;
-        object-fit: cover;
+        height: 45vw;
+        transform: translateY(-12vw);
+    }
+
+
+}
+
+.stepsRight {
+    height: 25vw;
+    margin-left: 25vw;
+    padding: 5vw;
+    background-color: var(--baltic-blue);
+    display: flex;
+    flex-direction: row;
+
+    border: solid 2px var(--border-color);
+    border-right: none;
+    border-radius: 25px 0px 0px 25px;
+    color: var(--white);
+
+    img {
+        height: 45vw;
+        transform: translateY(-12vw);
+
     }
 
 
