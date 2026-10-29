@@ -8,13 +8,14 @@
     --black: :#000000;
 
     --steel-blue: #457eacff;
+    --dark-steel: #0A2859;
     --blue-grey: #6e99beff;
     --powder-blue: #97b4d0ff;
     --cool-steel: #8ba3b7ff;
     --air-force-blue: #7492a8ff;
     --air-force-blue-2: #5c8099ff;
     --baltic-blue: rgb(50, 95, 124);
-    --border-color: rgb(204, 33, 33);
+    --border-color: rgb(255, 196, 0);
     --border-shadow: rgb(11, 23, 111);
 
 
@@ -107,12 +108,16 @@ body {
 
 }
 
+.headerCenter {
+    text-align: center;
+}
 
 
-img,
+
+/* img,
 video {
     max-width: 100%;
-}
+} */
 
 header {
 
@@ -130,7 +135,8 @@ header {
 
 
     img {
-        width: 50vw
+
+        height: 70vh;
     }
 
 }
@@ -280,26 +286,35 @@ main {
     height: 35vw;
     align-self: baseline;
     border-left: none;
-    background: linear-gradient(var(--cool-steel), var(--air-force-blue), var(--baltic-blue));
+    border: solid 2px var(--border-color);
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
     width: 50vw;
 
 }
 
 #informationAnimation {
 
+    margin: 20vw 0vw 20vw 0vw;
     animation: card-appear 1s;
     animation-timeline: view(block 60% 0%);
 }
 
 #madeForPage {
 
+    border-radius: 25px;
+    border: solid 2px var(--border-color);
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
     margin: 10vw 0vw 20vw 0vw;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: space-around;
+    align-items: center;
+    gap: 5vw;
+
+    padding: 8vw;
     margin: 10vw;
-    /* gap: 10vw; */
+
 
     animation: card-appear 1s;
     animation-timeline: view(block 60% 0%);
@@ -308,7 +323,7 @@ main {
     img {
         border-radius: 25px;
         align-self: right;
-        width: 45vw;
+        width: 30vw;
 
     }
 
@@ -316,9 +331,6 @@ main {
 
 #madeForText {
     display: flex;
-    border-radius: 25px;
-    border: solid 2px var(--border-color);
-    background-color: var(--baltic-blue);
     flex-direction: column;
     text-align: center;
 }
@@ -336,17 +348,13 @@ main {
 #videoPage {
     display: flex;
     justify-content: center;
-
-
-
-
 }
 
 video {
-    width: 10vw;
-    height: 360px;
+    width: 60vw;
+
     border: 2px solid #000;
-    display: block;
+
     margin: 0 auto;
     border-radius: 25px;
 
@@ -372,10 +380,16 @@ footer {
 
 }
 
+.stars {
+    color: rgba(255, 213, 0, 0.673);
+    font-size: 20px;
+}
+
 #review1 {
     margin-right: 25vw;
     padding: 5vw 3vw 5vw 3vw;
-    background-color: var(--baltic-blue);
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
     display: flex;
     align-items: left;
     gap: 2vw;
@@ -400,7 +414,8 @@ footer {
 #review2 {
     margin-left: 25vw;
     padding: 5vw 3vw 5vw 3vw;
-    background-color: var(--baltic-blue);
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
     display: flex;
     align-items: right;
     gap: 2vw;
@@ -444,7 +459,7 @@ footer {
     margin-right: 25vw;
 
     padding: 5vw;
-    background-color: var(--baltic-blue);
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -479,9 +494,10 @@ footer {
     height: 25vw;
     margin-left: 25vw;
     padding: 5vw;
-    background-color: var(--baltic-blue);
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     border: solid 2px var(--border-color);
     border-right: none;
@@ -506,31 +522,39 @@ footer {
     align-items: center;
     justify-content: center;
 
-    margin: 30vw 10vw 30vw 10vw;
+    margin: 30vw 5vw 30vw 5vw;
     padding: 5vw;
-    background-color: var(--baltic-blue);
-    border: solid 4px var(--border-color);
-    box-shadow: 2px 2px var(--border-shadow);
-    border-radius: 5%;
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
+    border: solid 2px red;
+    border-radius: 25px;
+    color: var(--white);
 
     animation: card-appear 1s;
     animation-timeline: view(block 60% 0%);
 
     img {
-        width: 50vw;
+        width: 40vw;
 
     }
 }
 
-
-
 .footerThings {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
 
     img {
         width: 3vw;
         height: 3vw;
     }
+}
+
+.footerPics {
+    display: flex;
+    flex-direction: row;
 }
 
 .footerPhoto {
@@ -702,7 +726,7 @@ input::placeholder {
 
 
 
-@media (width <800px) {
+@media (width<800px) {
 
 
     h1 {
@@ -738,13 +762,7 @@ input::placeholder {
             gap: 2vw;
         }
 
-
-
-
     }
-
-
-
 
 
     video {
@@ -752,14 +770,12 @@ input::placeholder {
         height: auto;
     }
 
-
-
     #homePageHeader {
         display: flex;
         flex-direction: column;
 
         img {
-            width: 500vw;
+            width: 50vw;
 
         }
 
@@ -784,18 +800,7 @@ input::placeholder {
     }
 
 
-
-
-
-
-
-
-
-
     #informationPage {
-
-
-
 
         h3 {
             font-size: 15px;
@@ -803,4 +808,425 @@ input::placeholder {
 
 
     }
+
+
+    /* fixen */
+
+
+
+
+
+    #informationBackground {
+        border-radius: 0px 25px 25px 0px;
+        border: solid 2px var(--border-color);
+        height: 35vw;
+        align-self: baseline;
+        border-left: none;
+        border: solid 2px var(--border-color);
+        background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
+        width: 50vw;
+
+    }
+
+    #informationAnimation {
+
+        animation: card-appear 1s;
+        animation-timeline: view(block 60% 0%);
+    }
+
+    #madeForPage {
+
+        border-radius: 25px;
+        border: solid 2px var(--border-color);
+        background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
+        margin: 10vw 0vw 20vw 0vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5vw;
+
+        padding: 8vw;
+        margin: 10vw;
+
+
+        animation: card-appear 1s;
+        animation-timeline: view(block 60% 0%);
+
+
+        img {
+            border-radius: 25px;
+            align-self: right;
+            width: 30vw;
+
+        }
+
+    }
+
+    #madeForText {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+    #backgroundImage {
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-future-artificial-intelligence-robot-blue-banner-poster-background-image_195056.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15vw 10vw 15vw 10vw;
+
+    }
+
+    #videoPage {
+        display: flex;
+        justify-content: center;
+    }
+
+    video {
+        width: 60vw;
+
+        border: 2px solid #000;
+
+        margin: 0 auto;
+        border-radius: 25px;
+
+        animation: card-appear 1s;
+        animation-timeline: view(block 60% 0%);
+
+    }
+
+    footer {
+        background-color: var(--powder-blue);
+        padding: 1px;
+    }
+
+    #reviews {
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+        gap: 20vw;
+        margin: 20vw 0vw 20vw 0vw;
+
+
+
+    }
+
+    #review1 {
+        margin-right: 25vw;
+        padding: 5vw 3vw 5vw 3vw;
+        background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
+        display: flex;
+        align-items: left;
+        gap: 2vw;
+
+        border: solid 2px var(--border-color);
+        border-left: none;
+        border-radius: 0px 25px 25px 0px;
+
+
+        animation: card-appear 1s;
+        animation-timeline: view(block 60% 0%);
+
+
+        img {
+            width: 25vw;
+            height: 25vw;
+            border-radius: 15%;
+            object-fit: cover;
+        }
+    }
+
+    #review2 {
+        margin-left: 25vw;
+        padding: 5vw 3vw 5vw 3vw;
+        background: linear-gradient(var(--steel-blue), var(--dark-steel));
+
+        display: flex;
+        align-items: right;
+        gap: 2vw;
+
+        border: solid 2px var(--border-color);
+        border-right: none;
+        border-radius: 25px 0px 0px 25px;
+
+        animation: card-appear 1s;
+        animation-timeline: view(block 60% 0%);
+
+
+
+
+        img {
+            width: 25vw;
+            height: 25vw;
+            border-radius: 15%;
+            object-fit: cover;
+        }
+    }
+
+
+    /* manual pagina */
+
+
+
+
+    .stepsLeft {
+        margin-right: 10vw;
+    }
+
+
+    .stepsRight {
+        margin-left: 10vw;
+    }
+
+    #warnings {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            width: 60vw;
+
+        }
+    }
+
+    .footerThings {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+
+        img {
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+
+    .footerPics {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerPhoto {
+        padding: 5px;
+        transition: all ease-out 2s;
+    }
+
+    .footerPhoto:hover {
+        transform: scale(1.2);
+        transition: all ease 1s;
+    }
+
+    /* fixe3n */
+
+
+    /* contactPagina */
+
+
+    form {
+        border-radius: 5px;
+        background-color: var(--ash-grey);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        gap: 1vw;
+
+        animation: card-appear 1s;
+        animation-timeline: view(block 60% 0%);
+
+
+    }
+
+    #fullName {
+
+        flex-direction: column;
+    }
+
+
+
+
+    #townAndBirthPlace {
+        flex-direction: column;
+    }
+
+}
+
+@media (800px <=width <=1032px) {
+
+
+
+    h1 {
+
+        font-size: 30px;
+    }
+
+    p,
+    li {
+        font-size: 17px;
+    }
+
+
+    h2 {
+        font-family: "Gravitas One", serif;
+        font-size: 27px;
+    }
+
+    h3 {
+        font-family: "Gravitas One", serif;
+        font-size: 15px;
+    }
+
+
+
+
+    nav {
+        height: 3vw;
+        width: 90vw;
+        box-sizing: border-box;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        margin-inline: auto;
+
+        background-color: var(--air-force-blue-2);
+
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 25px;
+
+        border: solid 2px var(--border-color);
+
+        position: fixed;
+        top: 0;
+
+        z-index: 3;
+
+        #navButtons {
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+        }
+
+        a {
+            font-family: "Gravitas One", serif;
+            color: var(--parchment);
+            /* transform-origin: center; */
+            transition: all 1s ease;
+            text-decoration: none;
+        }
+
+        a:hover {
+
+            color: var(--powder-blue);
+            text-decoration: none;
+            transform: scale(1.1);
+            /* transform-origin: center; */
+
+
+            cursor: pointer;
+
+
+        }
+    }
+
+    body {
+        margin: 0;
+
+    }
+
+    .headerCenter {
+        text-align: center;
+    }
+
+
+
+    header {
+
+        padding: 1px;
+        text-align: center;
+    }
+
+
+    #homePageHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0vw;
+
+
+
+        img {
+
+            height: 50vh;
+        }
+
+    }
+
+
+    #headerBackground {
+        /* background-color: var(--air-force-blue); */
+
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)),
+            url(https://wallpaperaccess.com/full/684122.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: 1vw;
+        border-radius: 25px;
+        padding: 2vw;
+
+    }
+
+    #indexHomePageHeader {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8vw;
+
+
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            /* transform: translateY(14%); */
+            width: 90vw;
+            z-index: 1;
+
+
+        }
+
+        h1 {
+            /* font-size: 90px; */
+            color: var(--white);
+            bottom: 70vh;
+
+            font-size: 80px;
+
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
 }
