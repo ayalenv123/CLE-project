@@ -131,9 +131,6 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 8vw;
-
-
-
     img {
 
         height: 70vh;
@@ -141,10 +138,7 @@ header {
 
 }
 
-
 #headerBackground {
-    /* background-color: var(--air-force-blue); */
-
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)),
         url(https://wallpaperaccess.com/full/684122.jpg);
     background-repeat: no-repeat;
@@ -153,7 +147,6 @@ header {
     margin: 1vw;
     border-radius: 25px;
     padding: 2vw;
-
 }
 
 #indexHomePageHeader {
@@ -164,18 +157,13 @@ header {
     align-items: center;
     gap: 8vw;
 
-
-
     img {
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        /* transform: translateY(14%); */
         width: 50vw;
         z-index: 1;
-
-
     }
 
     h1 {
@@ -300,20 +288,27 @@ main {
     animation-timeline: view(block 60% 0%);
 }
 
+#entireMadeForPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #madeForPage {
 
     border-radius: 25px;
     border: solid 2px var(--border-color);
     background: linear-gradient(var(--steel-blue), var(--dark-steel));
 
-    margin: 10vw 0vw 20vw 0vw;
+    margin: 0vw 10vw 20vw 10vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5vw;
 
     padding: 8vw;
-    margin: 10vw;
+
 
 
     animation: card-appear 1s;
@@ -347,6 +342,7 @@ main {
 
 #videoPage {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -710,7 +706,7 @@ input::placeholder {
 
 
 
-/* animations voor */
+/* animations voor scrollen */
 @keyframes card-appear {
     from {
         opacity: 0;
@@ -882,6 +878,9 @@ input::placeholder {
 
     #videoPage {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         justify-content: center;
     }
 
