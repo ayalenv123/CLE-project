@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Gravitas+One&family=Isometra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
 
@@ -25,8 +25,11 @@
 }
 
 h1 {
-    font-family: "Gravitas One", serif;
+    font-family: "Libre Caslon Condensed", serif;
     font-size: 50px;
+
+
+    border-radius: 25px;
 }
 
 p,
@@ -36,12 +39,12 @@ li {
 
 
 h2 {
-    font-family: "Gravitas One", serif;
+    font-family: "Libre Caslon Condensed", serif;
     font-size: 30px;
 }
 
 h3 {
-    font-family: "Gravitas One", serif;
+    font-family: "Libre Caslon Condensed", serif;
     font-size: 20px;
 }
 
@@ -130,6 +133,7 @@ header {
 
     h1 {
 
+        background: rgba(255, 255, 255, 0.2);
         color: var(--dark-steel);
         text-shadow: 1px 1px 1px #5f5d77,
             1px 2px 1px#5f5d77,
@@ -147,7 +151,7 @@ header {
 
     img {
         width: 25vw;
-        bottom: 0;
+
     }
 
 
@@ -185,6 +189,7 @@ header {
 
     h1 {
         /* font-size: 90px; */
+        background: rgba(11, 23, 111, 0.2);
         color: var(--white);
         bottom: 0;
         position: absolute;
@@ -206,7 +211,6 @@ header {
             1px 22px 10px rgba(16, 16, 16, 0.2),
             1px 25px 35px rgba(16, 16, 16, 0.2),
             1px 30px 60px rgba(16, 16, 16, 0.4);
-
 
     }
 
@@ -352,10 +356,15 @@ main {
 
 
 #backgroundImage {
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-future-artificial-intelligence-robot-blue-banner-poster-background-image_195056.jpg);
+
+    background: linear-gradient(90deg, rgba(10, 40, 89, 1) 0%, rgba(110, 153, 190, 1) 51%, rgba(69, 126, 172, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 15vw 10vw 15vw 10vw;
+
+    img {
+        z-index: 2;
+        width: 100%;
+    }
 
 }
 
@@ -752,7 +761,7 @@ input::placeholder {
 
 
 
-@media (width<800px) {
+@media (width<768px) {
 
 
 
@@ -797,16 +806,27 @@ input::placeholder {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 4vw;
+        gap: 2vw;
+
+
 
         h1 {
-
+            transform: translateY(-20vh);
+            text-align: center;
+            bottom: 60%;
             font-size: 50px;
+
+        }
+
+        p {
+            opacity: 0%;
         }
 
         img {
+            position: absolute;
             width: 80vw;
             bottom: 0;
+            transform: translateX(-30vw);
 
         }
 
@@ -820,6 +840,7 @@ input::placeholder {
         img {
             width: 90vw;
         }
+
 
         h1 {
             /* font-size: 90px; */
@@ -859,6 +880,7 @@ input::placeholder {
         height: 60vh;
         display: flex;
         flex-direction: column;
+        padding: 10px;
 
     }
 
@@ -920,13 +942,14 @@ input::placeholder {
 
 }
 
-@media (800px <=width <=1032px) {
+@media (768px <=width <=1032px) {
 
 
 
     h1 {
 
         font-size: 30px;
+
     }
 
     p,
@@ -1001,9 +1024,11 @@ input::placeholder {
     }
 
     #madeForPage {
+        flex-direction: column;
+        width: 60vw;
 
         img {
-            width: 40vw;
+            width: 50vw;
 
         }
 
@@ -1012,6 +1037,7 @@ input::placeholder {
 
     #videoPage {
         height: 50vh;
+
 
     }
 
