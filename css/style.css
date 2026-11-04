@@ -95,6 +95,16 @@ nav {
 
 
     }
+
+    img{
+        width:2vw;
+    }
+    #logo{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:2px;
+    }
 }
 
 body {
@@ -175,7 +185,7 @@ header {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 50vw;
+height:45vw;
         z-index: 1;
     }
 
@@ -276,7 +286,7 @@ main {
 
     img {
         height: 40vw;
-        margin-left: 15vw;
+        /* margin-left: 15vw; */
         transform: translateY(-9vw);
 
     }
