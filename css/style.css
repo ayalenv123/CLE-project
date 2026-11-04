@@ -80,7 +80,7 @@ nav {
         color: var(--blac);
         transition: all 1s ease;
         text-decoration: none;
-    
+
     }
 
     a:hover {
@@ -316,7 +316,7 @@ main {
     border: solid 2px var(--border-color);
     background: linear-gradient(var(--steel-blue), var(--dark-steel));
 
-    margin: 0vw 10vw 20vw 10vw;
+    margin: 0vw 5vw 20vw 5vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -333,7 +333,7 @@ main {
     img {
         border-radius: 25px;
         align-self: flex-end;
-        width: 30vw;
+        width: 25vw;
 
     }
 
