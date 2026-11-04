@@ -10,141 +10,145 @@
 </head>
 
 <body>
-  <section id="pageBackgroundColor">
-    <nav>
+  <!-- <section id="pageBackgroundColor"></section> -->
+  <nav>
+    <div>
+      <p>logo boxje image</p>
+    </div>
+    <div id="navButtons">
       <div>
-        <p>logo boxje image</p>
+        <a href="index.html">Home </a>
       </div>
-      <div id="navButtons">
-        <div>
-          <a href="index.html">Home </a>
-        </div>
-        <div>
-          <a href="manual.html"> Handleiding </a>
-        </div>
-        <div>
-          <a href="contact.html"> Contact </a>
-        </div>
+      <div>
+        <a href="manual.html"> Handleiding </a>
       </div>
-    </nav>
+      <div>
+        <a href="contact.html"> Contact </a>
+      </div>
+    </div>
+  </nav>
 
+
+  <header>
     <section id="headerBackground">
-      <header>
-        <section id="homePageHeader">
-          <div id="headerText">
-            <h1>Contact pagina</h1>
-            <p>Heb jij een klacht of een vraag over de robot vul het formulier in!</p>
-          </div>
-          <div id="headerImage">
-            <img src="images/cinemagraphQuestionBot.gif" alt="picture of the bot">
-          </div>
-        </section>
-      </header>
+      <section id="homePageHeader">
+        <div id="headerText">
+          <h1>Contact pagina</h1>
+          <p>Heb jij een klacht of een vraag over de robot vul het formulier in!</p>
+        </div>
+        <div id="headerImage">
+          <img src="images/cinemagraphQuestionBot.gif" alt="picture of the bot">
+        </div>
+      </section>
     </section>
+  </header>
 
-    <main id="contactMain">
 
-      <h2>Forms</h2>
 
-      <div id="contactPage">
-        <form>
-          <div id="fullName">
-            <div>
-              <label for="firstName">Voornaam:</label>
-              <input type="text" class="completeName" id="firstName" name="name" placeholder="Voornaam" required>
-            </div>
-            <div>
-              <label for="lastName">Achternaam:</label>
-              <input type="text" class="completeName" id="lastName" name="name" placeholder="Achternaam" required>
-            </div>
-          </div>
+  <main id="contactMain">
 
+    <h2>Forms</h2>
+
+    <div id="contactPage">
+      <form>
+        <div id="fullName">
           <div>
-            <div>
-              <label for="mail">Email:</label>
-              <input type="email" id="mail" name="mail" placeholder="Email" required>
-            </div>
-          </div>
-
-          <div id="townAndBirthPlace">
-            <div>
-              <label for="homeTown">Woonplaats:</label>
-              <input type="text" id="homeTown" placeholder="Woonplaats" required>
-            </div>
-            <div>
-              <label for="birthDate">vul je verjaardag in:</label>
-              <input type="date" id="birthDate" name="birthDate" required>
-            </div>
-          </div>
-
-          <div>
-            <label for="subject">Onderwerp:</label>
-            <select id="subject" name="subject" required>
-              <option value="" disabled="" selected="">Kies een onderwerp</option>
-              <option value="complaint">Klacht</option>
-              <option value="question">Vraag</option>
-              <option value="other">Anders</option>
-            </select>
-          </div>
-
-          <div>
-            <div>
-              <label for="message">bericht</label>
-              <input type="text" id="message" name="message" required>
-            </div>
-          </div>
-
-
-
-          <div>
-            <fieldset>
-              <legend>Inschrijven voor nieuwsbrief?</legend>
-              <input type="radio" id="yes" name="newsletter" value="Ja">
-              <label for="yes">Ja</label>
-              <input type="radio" id="no" name="newsletter" value="Nee">
-              <label for="no">Nee</label>
-            </fieldset>
+            <label for="firstName">Voornaam:</label>
+            <input type="text" class="completeName" id="firstName" name="name" placeholder="Voornaam" required>
           </div>
           <div>
-
-            <label for="condition">Ik ga akkoord met de algemene voorwaarden</label>
-            <input type="checkbox" id="condition" name="condition" value="condition">
-
-          </div>
-
-          <div>
-            <div>
-              <input type="submit" name="submit-button" value="Verzenden">
-            </div>
-          </div>
-        </form>
-      </div>
-
-
-    </main>
-
-    <footer>
-
-      <div class="footerThings">
-        <div class="footerText">
-          <p>project van CLE team 5</p>
-        </div>
-        <div class="footerPics">
-          <div class="footerPhoto">
-            <img src="images/tiktok.png">
-          </div>
-          <div class="footerPhoto">
-            <img src="images/facebook.png">
-          </div>
-          <div class="footerPhoto">
-            <img src="images/instagram.png">
+            <label for="lastName">Achternaam:</label>
+            <input type="text" class="completeName" id="lastName" name="name" placeholder="Achternaam" required>
           </div>
         </div>
+
+        <div>
+          <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" placeholder="Email" required>
+          </div>
+        </div>
+
+        <div id="townAndBirthPlace">
+          <div>
+            <label for="homeTown">Woonplaats:</label>
+            <input type="text" id="homeTown" placeholder="Woonplaats" required>
+          </div>
+          <div>
+            <label for="birthDate">vul je verjaardag in:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="subject">Onderwerp:</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled="" selected="">Kies een onderwerp</option>
+            <option value="complaint">Klacht</option>
+            <option value="question">Vraag</option>
+            <option value="other">Anders</option>
+          </select>
+        </div>
+
+        <div>
+          <div>
+            <label for="message">bericht</label>
+            <input type="text" id="message" name="message" required>
+          </div>
+        </div>
+
+
+
+        <div>
+          <fieldset>
+            <legend>Inschrijven voor nieuwsbrief?</legend>
+            <input type="radio" id="yes" name="newsletter" value="Ja">
+            <label for="yes">Ja</label>
+            <input type="radio" id="no" name="newsletter" value="Nee">
+            <label for="no">Nee</label>
+          </fieldset>
+        </div>
+        <div>
+
+          <label for="condition">Ik ga akkoord met de algemene voorwaarden</label>
+          <input type="checkbox" id="condition" name="condition" value="condition">
+
+        </div>
+
+        <div>
+          <div>
+            <input type="submit" name="submit-button" value="Verzenden">
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+  </main>
+
+  <footer>
+
+    <div class="footerThings">
+      <div class="footerText">
+        <p>project van CLE team 5</p>
       </div>
-    </footer>
+      <div class="footerPics">
+        <div class="footerPhoto">
+          <img src="images/tiktok.png">
+        </div>
+        <div class="footerPhoto">
+          <img src="images/facebook.png">
+        </div>
+        <div class="footerPhoto">
+          <img src="images/instagram.png">
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
 </body>
+
 
 </html>

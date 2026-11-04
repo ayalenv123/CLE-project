@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
-
     --parchment: #f4f3eeff;
-
     --white: #FFFFFF;
-    --black: :#000000;
-
+    --black: #000000;
     --steel-blue: #457eacff;
     --dark-steel: #0A2859;
     --blue-grey: #6e99beff;
@@ -19,7 +16,7 @@
     --border-shadow: rgb(11, 23, 111);
 
 
-    /* font-family: "Gravitas One", serif;*/
+
     font-family: "BenchNine", sans-serif;
 
 }
@@ -80,16 +77,10 @@ nav {
 
     a {
         font-family: "Gravitas One", serif;
-        color: var(--parchment);
-        /* transform-origin: center; */
+        color: var(--blac);
         transition: all 1s ease;
         text-decoration: none;
-        /* background-color: var(--powder-blue);
-        border-radius: 25px;
-        border: solid 2px;
-        background-color: var(--white);
-        display: inline-block;
-        padding: 10px 16px; */
+    
     }
 
     a:hover {
@@ -107,6 +98,7 @@ nav {
 }
 
 body {
+    background-color: var(--parchment);
     margin: 0;
 
 }
@@ -340,7 +332,7 @@ main {
 
     img {
         border-radius: 25px;
-        align-self: right;
+        align-self: flex-end;
         width: 30vw;
 
     }
@@ -428,7 +420,7 @@ footer {
     background: linear-gradient(var(--steel-blue), var(--dark-steel));
 
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     gap: 2vw;
 
     border: solid 2px var(--border-color);
@@ -454,7 +446,7 @@ footer {
     background: linear-gradient(var(--steel-blue), var(--dark-steel));
 
     display: flex;
-    align-items: right;
+    align-items: flex-end;
     gap: 2vw;
 
     border: solid 2px var(--border-color);
@@ -704,7 +696,7 @@ input[type=date] {
 
 input[type=submit] {
     width: 100%;
-    color: var(--black);
+    color: var(--white);
     padding: 14px;
     border: none;
     border-radius: 4px;
@@ -787,6 +779,7 @@ input::placeholder {
     nav {
         height: auto;
 
+        flex-direction: column;
 
         #navButtons {
             display: flex;
