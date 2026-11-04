@@ -841,7 +841,7 @@ input::placeholder {
     #indexHomePageHeader {
 
         img {
-            width: 90vw;
+           height:60vh;
         }
 
 
@@ -1012,7 +1012,7 @@ input::placeholder {
             left: 50%;
             transform: translateX(-50%);
             /* transform: translateY(14%); */
-            width: 90vw;
+            height:60vh;
             z-index: 1;
         }
 
