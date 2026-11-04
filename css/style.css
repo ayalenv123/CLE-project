@@ -766,7 +766,13 @@ input::placeholder {
 @media (width<768px) {
 
 
-
+.stepsRight{
+    height:30vw;
+    h1, p{
+       align-items:center; 
+    }
+    
+}
 
     p,
     li {
@@ -814,9 +820,8 @@ input::placeholder {
 
 
         h1 {
-            transform: translateY(-20vh);
+            transform: translateY(-15vh);
             text-align: center;
-            bottom: 60%;
             font-size: 50px;
 
         }
@@ -848,7 +853,7 @@ input::placeholder {
         h1 {
             /* font-size: 90px; */
             color: var(--white);
-            bottom: 70%;
+            bottom: 60%;
             font-size: 60px;
         }
 
