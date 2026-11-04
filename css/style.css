@@ -767,10 +767,8 @@ input::placeholder {
 
 
 .stepsRight{
-    height:30vw;
-    h1, p{
-       align-items:center; 
-    }
+    height:18vh;
+   
     
 }
 
