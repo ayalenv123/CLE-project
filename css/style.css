@@ -430,7 +430,8 @@ footer {
     background: linear-gradient(var(--steel-blue), var(--dark-steel));
 
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     gap: 2vw;
 
     border: solid 2px var(--border-color);
@@ -456,7 +457,8 @@ footer {
     background: linear-gradient(var(--steel-blue), var(--dark-steel));
 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content:space-between;
     gap: 2vw;
 
     border: solid 2px var(--border-color);
@@ -520,6 +522,38 @@ footer {
 
     }
 
+
+}
+
+.stepsLeftInterview {
+ height: 25vw;
+    margin-right: 20vw;
+
+    padding: 5vw;
+    background: linear-gradient(var(--steel-blue), var(--dark-steel));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: solid 2px var(--border-color);
+    border-left: none;
+    border-radius: 0px 25px 25px 0px;
+
+    color: var(--white);
+
+    animation: card-appear 1s;
+    animation-timeline: view(block 60% 0%);
+
+
+    img {
+        height: 45vw;
+        width:50vw;
+        object-fit:cover;
+        transform: translateY(-15vw);
+        align-self: flex-start;
+
+
+    }
 
 }
 
